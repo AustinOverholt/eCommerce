@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eCommerce.Web", "eCommerce.Web\eCommerce.Web.csproj", "{69E75993-E206-45FE-82E9-908DB50763A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eCommerce.Web.Tests", "eCommerce.Web.Tests\eCommerce.Web.Tests.csproj", "{050213F5-2393-48C6-8F65-20FB66C0580F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eCommerce.Tests", "eCommerce.Web.Tests\eCommerce.Tests.csproj", "{050213F5-2393-48C6-8F65-20FB66C0580F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eCommerce.Model", "eCommerce.Model\eCommerce.Model.csproj", "{0CB76CD6-9BAA-4B2C-9A45-BA9B4B950620}"
 EndProject
