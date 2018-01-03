@@ -58,4 +58,7 @@
   <ItemGroup>
     <Folder Include="Properties" />
   </ItemGroup>
+  <ItemGroup>
+    <Build Include="AspNetUsers_SelectAll.sql" />
+  </ItemGroup>
 </Project>

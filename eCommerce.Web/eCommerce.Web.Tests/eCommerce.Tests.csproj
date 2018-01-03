@@ -91,14 +91,26 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controllers\HomeControllerTest.cs" />
+    <Compile Include="Services\UserTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.Secrets.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\eCommerce.Model\eCommerce.Model.csproj">
+      <Project>{C0C5B51E-A65F-4B21-8880-6471C61715F7}</Project>
+      <Name>eCommerce.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\eCommerce.Services\eCommerce.Services.csproj">
+      <Project>{B126982A-41FF-4209-82E7-B0DDCAB0EDBC}</Project>
+      <Name>eCommerce.Services</Name>
+    </ProjectReference>
     <ProjectReference Include="..\eCommerce.Web\eCommerce.Web.csproj">
       <Project>{69E75993-E206-45FE-82E9-908DB50763A8}</Project>
       <Name>eCommerce.Web</Name>
