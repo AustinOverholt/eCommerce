@@ -8,6 +8,9 @@ namespace eCommerce.Web.Controllers
 {
     public class AdminController : Controller
     {
-
+        public ActionResult AdminIndex()
+        {
+            return View();
+        }
     }
 }
