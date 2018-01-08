@@ -14,13 +14,14 @@ using eCommerce.Web.Models;
 
 namespace eCommerce.Web
 {
-    public class EmailService : IIdentityMessageService
+    public class SendgridService : IIdentityMessageService
     {
         public Task SendAsync(IdentityMessage message)
         {
             // Plug in your email service here to send an email.
             return Task.FromResult(0);
         }
+
     }
 
     public class SmsService : IIdentityMessageService
@@ -76,7 +77,7 @@ namespace eCommerce.Web
                 Subject = "Security Code",
                 BodyFormat = "Your security code is {0}"
             });
-            manager.EmailService = new EmailService();
+            manager.EmailService = new SendgridService();
             manager.SmsService = new SmsService();
             var dataProtectionProvider = options.DataProtectionProvider;
             if (dataProtectionProvider != null)
