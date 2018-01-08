@@ -20,7 +20,7 @@ namespace eCommerce.Services
 
         public async Task SendContactUsEmail()
         {
-            var ToEmail = "austinoverholt@mailinator.com";
+            var ToEmail = "austinoverholt@gmail.com";
             var FromEmail = "austinjoeloverholt@mailinator.com";
             var ToName = "Austin";
             var FromName = "Joel";
