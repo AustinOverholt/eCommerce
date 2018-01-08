@@ -11,7 +11,8 @@ namespace eCommerce.Web.Tests.Services
         [TestMethod]
         public void ContactUsTest()
         {
-            svc.SendContactUsEmail();
+            svc.SendContactUsEmail().Wait();
+
         }
     }
 }

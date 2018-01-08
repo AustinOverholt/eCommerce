@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace eCommerce.Services
@@ -12,15 +13,15 @@ namespace eCommerce.Services
     public class SendGridService : BaseService
     {
         // Contact us email
-        //public async Task ContactUsEmail()
-        //{
-        //    await SendContactUsEmail();
-        //}
+        public async Task ContactUsEmail()
+        {
+            await SendContactUsEmail();
+        }
 
         public async Task SendContactUsEmail()
         {
             var ToEmail = "austinoverholt@mailinator.com";
-            var FromEmail = "austinjoeloverholt@gmail.com";
+            var FromEmail = "austinjoeloverholt@mailinator.com";
             var ToName = "Austin";
             var FromName = "Joel";
             var apiKey = SgApiKey;
