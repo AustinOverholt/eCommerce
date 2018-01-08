@@ -1,6 +1,5 @@
-﻿using System;
+﻿using eCommerce.Services;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using eCommerce.Services;
 
 namespace eCommerce.Web.Tests.Services
 {
@@ -12,7 +11,6 @@ namespace eCommerce.Web.Tests.Services
         public void ContactUsTest()
         {
             svc.SendContactUsEmail().Wait();
-
         }
     }
 }
