@@ -60,5 +60,6 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="AspNetUsers_SelectAll.sql" />
+    <Build Include="Configuration.sql" />
   </ItemGroup>
 </Project>
