@@ -12,7 +12,7 @@ namespace eCommerce.Services
     {
         public void GetConfigString()
         {
-            throw new NotImplementedException();
+
         }
 
         public void AddConfigString()
