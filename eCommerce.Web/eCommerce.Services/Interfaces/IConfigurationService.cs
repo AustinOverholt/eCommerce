@@ -1,16 +1,15 @@
-﻿using System;
+﻿using eCommerce.Model.Domain;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data.SqlClient;
 
 namespace eCommerce.Services.Interfaces
 {
     public interface IConfigurationService
     {
-        void GetConfigString();
+        List<Configs> GetConfigString();
         void AddConfigString();
         void DeleteConfigString();
         void UpdateConfigString();
+        Configs Mapper(SqlDataReader reader);
     }
 }
