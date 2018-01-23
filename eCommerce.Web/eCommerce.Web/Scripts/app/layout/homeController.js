@@ -13,11 +13,13 @@
         vm.$onInit = _init;
         vm.genericService = genericService;
         vm.users = {};
+        vm.configs = {};
 
        
         function _init() {
             console.log("Home Ctrl Initialized!");
             _getUsers();
+            _getConfigs();
         }
 
         // accessing user list
@@ -30,6 +32,21 @@
             function _getSuccess(res) {
                 vm.users = res.data.items;
                 console.log(res.data.items);
+            }
+
+            function _getFailure(err) {
+                console.log(err);
+            }
+        }
+
+        function _getConfigs() {
+            genericService.get("/api/configuration/")
+                .then(_getSuccess)
+                .catch(_getFailure);
+
+            function _getSuccess(res) {
+                vm.configs = res.data.items;
+                console.log(res);
             }
 
             function _getFailure(err) {
